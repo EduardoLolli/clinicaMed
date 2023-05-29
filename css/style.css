@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container-conteudo {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-conteudo h2,
+.container-conteudo h3 {
+    margin: 0;
+}
+
+main {
+    color: #0000008c;
+    margin-bottom: 60px;
+}
+
+/* CSS do TOPO (HEADER)*/
+
+.topo {
+    width: 100%;
+    background-color: #00cad1;
+}
+
+.topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.links-topo {
+    display: flex;
+}
+
+.links-topo a {
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.links-topo a:hover {
+    color: #004b4c;
+}
+
+@media (max-width: 425px) {
+    .topo .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 10px 0;
+    }
+
+    .links-topo {
+        width: 100%;
+        border-top: 1px solid #009fa5;
+        justify-content: space-around;
+    }
+}
+
+/* FIM CSS do TOPO (HEADER)*/
+
+/* Início CSS Rodapé */
+
+.rodape {
+    background-color: #0d6e71;
+    padding: 20px;
+}
+
+.rodape p {
+    color: #fff;
+}
+
+.rodape img {
+    height: 60px;
+}
+
+
+
+/* Fim CSS Rodapé */
+
+.banner {
+    background-image: url('../assets/recepcao.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+
+.banner-titulo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.banner-titulo h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 38px;
+    margin: 0;
+}
+
+#sobre,
+#contato,
+#especialidades {
+    padding: 40px 20px 0;
+}
+
+.imagem-lista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-lista div {
+    display: block;
+}
+
+.imagem-lista div h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.imagem-lista li {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto-galeria {
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    width: calc(100% / 3 - 40px);
+}
+
+.foto-galeria img {
+    width: 100%;
+}
+
+.foto-galeria figcaption {
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.botao-horarios {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.botao-horarios a {
+    background-color: #00cad1;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+@media (max-width: 425px) {
+    .links-topo a {
+        font-size: 12px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .banner h1 {
+        font-size: 18px;
+    }
+
+    .imagem-lista img {
+        display: none;
+    }
+
+    .foto-galeria {
+        width: 100%;
+    }
+
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .banner {
+        height: 300px;
+    }
+
+    .banner h1 {
+        font-size: 22px
+    }
+
+    .imagem-lista img {
+        display: none;
+    }
+
+    .foto-galeria {
+        width: calc(100% / 2 - 40px);
+    }
+    .galeria{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .banner {
+        height: 400px;
+    }
+}
